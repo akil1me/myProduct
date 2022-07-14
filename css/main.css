@@ -563,20 +563,7 @@ body {
   display: block;
 }
 
-@media only screen and (max-width: 980px) {
-  .header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    background-color: #ffffff;
-    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.25);
-  }
-  .logo__img {
-    display: block;
-    width: 190px;
-    height: 42px;
-  }
+@media only screen and (max-width: 1010px) {
   .header__navbar {
     display: none;
   }
@@ -586,7 +573,18 @@ body {
 }
 @media only screen and (max-width: 412px) {
   .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     padding: 8px 0;
+    background-color: #ffffff;
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.25);
+  }
+  .logo__img {
+    display: block;
+    width: 190px;
+    height: 42px;
   }
   .humburger__img {
     width: 24px;
@@ -595,5 +593,10 @@ body {
   .humburger__img-x {
     width: 24px;
     height: 28px;
+  }
+}
+@media only screen and (max-width: 412px) {
+  .main {
+    margin-top: 58px;
   }
 }/*# sourceMappingURL=main.css.map */
