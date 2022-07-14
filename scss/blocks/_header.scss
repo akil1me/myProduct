@@ -1,5 +1,5 @@
 .header {
-  padding: 19px;
+  padding: 19px 0;
 }
 
 .header__inner {
@@ -39,7 +39,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 28px;
-  color: $cl-text;
+  color: var(--cl-text);
 }
 
 .nav__link:hover {
@@ -57,7 +57,7 @@
 .link-sign--in {
   margin-left: 24px;
   margin-right: 24px;
-  color: #173A56;
+  color: var(--cl-logo);
   border: 1px solid #bcd0e5;
 }
 
@@ -75,7 +75,7 @@
 }
 
 .link-sign--up:hover {
-  background-color: #ffffff;
+  background-color: var(--cl-bg);
   border: 1px solid #02897a;
   color: #02897a;
 }
@@ -86,6 +86,10 @@
   background-color: #f3f3f3;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.header__button-mode:hover {
+  opacity: 0.7;
 }
 
 .header__humburger {
@@ -103,8 +107,8 @@
   padding: 20px;
   width: 95%;
   height: 300px;
-  background-color: #ffffff;
-  box-shadow: 0px 0px 100px 100px rgba(184, 180, 180, 0.812);
+  background-color: var(--cl-bg);
+  box-shadow: 0px 0px 100px 100px var(--cl-boxsh);
   text-align: center;
 }
 
@@ -117,7 +121,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 28px;
-  color: $cl-text;
+  color: var(--cl-text);
 }
 
 .humburger__link :hover {
@@ -137,7 +141,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  color: #173A56;
+  color: var(--cl-logo);
 
 }
 
@@ -148,8 +152,20 @@
   right: 0;
 }
 
+.humburger__button-mode :hover {
+  opacity: 0.7;
+}
+
 .humburger__img-x {
   display: none;
+}
+
+.humburger__img path {
+  stroke: var(--cl-logo);
+}
+
+.humburger__img-x path {
+  fill: var(--cl-logo);
 }
 
 .humburger__input:checked~.humburger__modal {
@@ -175,7 +191,7 @@
 }
 
 
-@include responsible(412px) {
+@include responsible(413px) {
 
   .header {
     position: fixed;
@@ -183,7 +199,7 @@
     right: 0;
     left: 0;
     padding: 8px 0;
-    background-color: #ffffff;
+    background-color: var(--cl-bg);
     box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.25);
   }
 
