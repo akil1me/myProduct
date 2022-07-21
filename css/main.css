@@ -1796,6 +1796,11 @@ body {
   color: #ffffff;
   background-color: #02897a;
   border-radius: 8px;
+  cursor: pointer;
+}
+
+.footer__button:hover {
+  opacity: 0.7;
 }
 
 .footer__bottom {
