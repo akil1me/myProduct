@@ -220,6 +220,11 @@
 }
 
 @include responsible(424px) {
+  .quick__content img {
+    width: 89px;
+    height: 89px;
+  }
+
   .quick__left-content::before {
     display: none;
   }
