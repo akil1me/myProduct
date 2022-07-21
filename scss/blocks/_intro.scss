@@ -87,6 +87,17 @@
   }
 }
 
+@include responsible(547px) {
+  .intro {
+    background-size: 1208px 202px;
+
+  }
+
+  .darkmode {
+    background-size: 1208px 202px;
+  }
+}
+
 @include responsible(458px) {
   .intro {
     padding: 10px 0;
